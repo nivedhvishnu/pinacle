@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+.Heading-Name{
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    height: 65vh;
+    text-align: center;
+    font-size: 23vw;
+    background-clip: text;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: linear-gradient(to right bottom,rgba(0, 140, 255, 0.8),rgba(11, 74, 110, 0.8)),
+    url("walle.jpg");
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Sub-Heading-Name{
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    height: 30vh;
+    top:0;
+    text-align: center;
+    font-size: 10vw;
+    background-clip: text;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: linear-gradient(to right bottom,rgba(0, 140, 255, 0.8),rgba(11, 74, 110, 0.8)),
+    url("walle.jpg");
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#submit-paper-button{
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: rgb(63, 163, 130);
+    transition: background-color 0.5s;
+}
+#submit-paper-button:hover{
+    background-color: rgb(37, 124, 95);
+    cursor: pointer;
+}
+#departments{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    visibility: hidden;
+}
+.cse, .mec, .ece{
+    margin-top: -40px;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+    border: 1px solid white;
+    animation: departmentAnimation 2s ease-in-out;
+    background-color: rgba(27, 158, 114, 0.377);
+}
+.cse:hover, .mec:hover, .ece:hover{
+    background-color: rgb(27, 158, 115);
+    cursor:pointer;
+}
+
+marquee{
+    box-sizing: border-box;
+    background: transparent;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes
+departmentAnimation{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

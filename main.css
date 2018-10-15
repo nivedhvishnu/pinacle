@@ -42,6 +42,34 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#view-event-button{
+    position: absolute;
+    left:400px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: rgb(63, 163, 130);
+    transition: background-color 0.5s;
+}
+
+#about-event-button{
+    position: absolute;
+    right:400px;
+    bottom:-70px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: rgb(63, 163, 130);
+    transition: background-color 0.5s;
+}
+
 #submit-paper-button{
     padding: 15px;
     margin: auto;
@@ -52,7 +80,7 @@ body{
     background-color: rgb(63, 163, 130);
     transition: background-color 0.5s;
 }
-#submit-paper-button:hover{
+#submit-paper-button:hover,#view-event-button:hover{
     background-color: rgb(37, 124, 95);
     cursor: pointer;
 }

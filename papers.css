@@ -116,6 +116,7 @@ svg {
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
   transition: .5s ease;
+  border-radius: 20px;
 }
 
 .upload_paper_form:hover {
@@ -170,17 +171,28 @@ label .req {
   margin: 2px;
   color: red;
 }
-
-.button {
-  border: 1px solid black;
+.submit{
   position: relative;
   top:25px;
-  left:25%;
+  left:0%;
+}
+
+.status{
+  position: absolute;
+  /*top:-10px;*/
+  left:52%;
+  bottom:-25px;
+}
+a{
+  text-decoration: none;
+}
+.button {
+  border: 1px solid black;
   outline: none;
   border-radius: 0;
-  padding: 5px 0;
-  font-size: 2rem;
-  font-weight: 600;
+  padding: 5px ;
+  font-size: 3vh;
+  font-weight: 100;
   text-transform: uppercase;
   letter-spacing: .1em;
   background: #85b9dd;
@@ -190,7 +202,7 @@ label .req {
 }
 .button:hover, .button:focus {
   background: #85b9dd;
-  
+  border-radius: 20px;
 }
 
 .button-block {

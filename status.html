@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <title>Paper Status</title>
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <style>
+            body {
+                background-color: #85b9dd;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            input,option,select {
+                position: relative;
+                top:5px;
+                font-size: 22px;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 5px 10px;
+                background: none;
+                background-image: none;
+                border: 1px solid #fff;
+                color: #000;
+                border-radius: 0;
+                transition: border-color .25s ease, box-shadow .25s ease;
+            }
+            .plane-container {
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+  transform: translate(-200px,-600px);
+}
+ /*Paper Plane: Image*/
+.plane {
+  width: 100%;
+  height: 60px;
+}
+
+/*Paper Plane: Animation*/
+.plane-container {
+  -webkit-animation: paper-plane-scoping-y 3s 1s forwards infinite;
+  -moz-animation: paper-plane-scoping-y 3s 1s forwards infinite;
+  animation: paper-plane-scoping-y 3s 1s forwards infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.plane-container-x {
+  -webkit-animation: paper-plane-scoping-x 6s forwards infinite;
+  -moz-animation: paper-plane-scoping-x 6s forwards infinite;
+  animation: paper-plane-scoping-x 6s forwards infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes paper-plane-scoping-y {
+  0% {
+    transform: translate(-200px,-600px);
+  }
+  100% {
+    transform: translate(200px,600px);
+  }
+}
+
+@keyframes paper-plane-scoping-x {
+  0% {
+    transform: translate(-800px,250px);
+  }
+  100% {
+    transform: translate(800px,-200px);    
+  }
+}
+
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  perspective: 800px;
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+.upload_paper_form {
+  padding: 40px;
+  max-height: 400px;
+  max-width: 300px;
+  background-color:rgba(225,225,225,0.2);
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  transition: .5s ease;
+  border-radius: 20px;
+}
+
+.upload_paper_form:hover {
+  box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+}
+  
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+input {
+  position: relative;
+  top:15px;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #fff;
+  color: #000;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus{
+  outline: 0;
+  border-color: #000;
+}
+
+label {
+  position: relative;
+  top:6px;
+  bottom:5px;
+  /*transform: translateY(6px);*/
+  left: 13px;
+  color: rgba(0,0,0, 0.7);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+}
+
+option{
+  background-color: #85b9dd;
+}
+
+label .req {
+  margin: 2px;
+  color: red;
+}
+
+.button {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0;
+  padding: 5px ;
+  font-size: 3vh;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #85b9dd;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button:hover, .button:focus {
+  background: #85b9dd;
+  border-radius: 20px;
+}
+
+.button-block {
+  display: inline-block;
+  width: 75%;
+  text-align: center;
+}
+
+.submit{
+  position: relative;
+  top:25px;
+  left:13%;
+}
+@keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transition-duration: 1s;
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transition-duration: 1s;
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transition-duration: 1s;
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transition-duration: 1s;
+    transform: rotate(0deg);
+  }
+}
+
+/* styling planes ends here */
+        </style>
+    </head>
+    <body>
+            <div class="frame">
+                    <div class="plane-container">
+                        <a target="_blank">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+                                xml:space="preserve" class="plane">
+                                <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                                <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                            </svg></a>
+                
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="plane-container-x">
+                        <a target="_blank">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+                                xml:space="preserve" class="plane">
+                                <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                                <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                            </svg></a>
+                
+                    </div>
+                </div>
+        <div class="upload_paper_form">
+            <div class="tab-content">
+              <div id="paper_upload">   
+                <h1>Check Paper Status</h1>
+                
+                <form action="" method="post">
+                
+                <div class="top-row">
+                  <div class="field-wrap">
+                    <label>
+                      Enter your unique paper id<span class="req">*</span>
+                    </label>
+                    <input type="text" required autocomplete="off" /><br />
+                  </div>
+                </div>      
+                <button type="submit" class="button button-block submit" >Check Status</button>          
+                </form>
+      
+              </div>
+              
+            </div><!-- tab-content -->
+            
+      </div> 
+    </body>
+</html>
